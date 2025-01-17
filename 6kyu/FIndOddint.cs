@@ -7,7 +7,7 @@ namespace Solution
       for (int i = 0; i < seq.Length; i++)
       {
         int count = 0;
-        for (int j = seq[i]; j<seq.Length; j++)
+        for (int j = 0; j<seq.Length; j++)
         {
             if(seq[i]==seq[j])
             {
