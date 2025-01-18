@@ -2,22 +2,26 @@ public static class Kata
 {
     public static int sumTwoSmallestNumbers(int[] numbers)
     {
-        int small = Math.Min(numbers[0], numbers[1]);
-        int secondSmall = Math.Max(numbers[0], numbers[1]);
+        int small = int.MaxValue;
+        int secondSmall = int.MaxValue;
 
-        for (int i = 2; i < numbers.Length; i++)
+        foreach (int num in numbers)
         {
-            if (numbers[i] < small)
+            if (num < small)
             {
                 secondSmall = small;
-                small = numbers[i];
+                small = num;
             }
-            else if (numbers[i] < secondSmall)
+            else if (num < secondSmall)
             {
-                secondSmall = numbers[i];
+                secondSmall = num;
             }
         }
-        
+
         return small + secondSmall;
     }
 }
+
+
+// return numbers.OrderBy(i => i).Take(2).Sum(); //best solution have seen so far
+// System.Array.Sort(numbers); return numbers[0]+numbers[1];
