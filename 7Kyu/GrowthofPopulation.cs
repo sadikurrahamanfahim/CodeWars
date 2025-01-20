@@ -1,16 +1,13 @@
 using System;
-
 class Arge
 {
 
-    public static int NbYear(int p0, double percent, int aug, int p)
+    public static int NbYear(double p0, double percent, int aug, int p)
     {
         int years = 0;
-        double population = p0;
-
-        while (population < p)
+        while (p0 < p)
         {
-            population += population * percent / 100 + aug;
+            p0 += Math.Floor(p0 * percent * 0.01 + aug);
             years++;
         }
         return years;
