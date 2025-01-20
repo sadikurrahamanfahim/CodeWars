@@ -4,7 +4,7 @@ public static class Kata
 {
     public static int GetVowelCount(string str)
     {
-        int vowelCount = 0;
+      int vowelCount = 0;
       str = str.ToLower();
 
         for (int i = 0; i < str.Length; i++)
