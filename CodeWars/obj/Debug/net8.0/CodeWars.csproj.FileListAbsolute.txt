@@ -1,0 +1,15 @@
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.GeneratedMSBuildEditorConfig.editorconfig
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.AssemblyInfoInputs.cache
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.AssemblyInfo.cs
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.csproj.CoreCompileInputs.cache
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.sourcelink.json
+B:\CodeWars\CodeWars\bin\Debug\net8.0\CodeWars.exe
+B:\CodeWars\CodeWars\bin\Debug\net8.0\CodeWars.deps.json
+B:\CodeWars\CodeWars\bin\Debug\net8.0\CodeWars.runtimeconfig.json
+B:\CodeWars\CodeWars\bin\Debug\net8.0\CodeWars.dll
+B:\CodeWars\CodeWars\bin\Debug\net8.0\CodeWars.pdb
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.dll
+B:\CodeWars\CodeWars\obj\Debug\net8.0\refint\CodeWars.dll
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.pdb
+B:\CodeWars\CodeWars\obj\Debug\net8.0\CodeWars.genruntimeconfig.cache
+B:\CodeWars\CodeWars\obj\Debug\net8.0\ref\CodeWars.dll
