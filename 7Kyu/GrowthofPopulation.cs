@@ -1,7 +1,6 @@
 using System;
 class Arge
 {
-
     public static int NbYear(double p0, double percent, int aug, int p)
     {
         int years = 0;
