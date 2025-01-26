@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
-public static class Kata
-{
-    public static int DescendingOrder(int num)
+public static class Kata {
+    public static IEnumerable<string> FriendOrFoe (string[] names)
     {
-        string desc = num.ToString();
-        char[] arr = desc.ToCharArray();
-        Array.Sort(arr);
-        Array.Reverse(arr);
-        
-        return int.Parse(new string(arr));
+        List<string> friends = new List<string>();
+        for (int i = 0; i < names.Length; i++)
+        {
+            string name = names[i];
+            if (name.Length == 4)
+            {
+                friends.Add(name);
+            }
+        }
+        return friends;
     }
 }
