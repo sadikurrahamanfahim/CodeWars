@@ -1,20 +1,13 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
 
-namespace Solution
+public class Kata
 {
-    public static class SpacesRemover
+    public static int GetUnique(IEnumerable<int> numbers)
     {
-        public static string NoSpace(string input)
-        {
-            StringBuilder sb = new StringBuilder(); 
-            foreach (var c in input)
-            {
-                if (c != ' ')
-                {
-                    sb.Append(c);
-                }
-            }
-            return sb.ToString();
-        }
+        var groupedNumbers = numbers.GroupBy(x => x);
+        int uniqueNumber = groupedNumbers.Single(g => g.Count() == 1).Key;
+
+        return uniqueNumber;
     }
 }

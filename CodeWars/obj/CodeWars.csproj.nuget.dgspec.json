@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev_D\\CodeWars\\CodeWars\\CodeWars.csproj": {}
+    "B:\\CodeWars\\CodeWars\\CodeWars.csproj": {}
   },
   "projects": {
-    "D:\\Dev_D\\CodeWars\\CodeWars\\CodeWars.csproj": {
+    "B:\\CodeWars\\CodeWars\\CodeWars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev_D\\CodeWars\\CodeWars\\CodeWars.csproj",
+        "projectUniqueName": "B:\\CodeWars\\CodeWars\\CodeWars.csproj",
         "projectName": "CodeWars",
-        "projectPath": "D:\\Dev_D\\CodeWars\\CodeWars\\CodeWars.csproj",
-        "packagesPath": "C:\\Users\\fahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev_D\\CodeWars\\CodeWars\\obj\\",
+        "projectPath": "B:\\CodeWars\\CodeWars\\CodeWars.csproj",
+        "packagesPath": "C:\\Users\\hpenv\\.nuget\\packages\\",
+        "outputPath": "B:\\CodeWars\\CodeWars\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\hpenv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\fahim\\.dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
