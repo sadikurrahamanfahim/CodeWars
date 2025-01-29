@@ -1,13 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 
-public class Kata
+public static class Kata
 {
-    public static int GetUnique(IEnumerable<int> numbers)
+    public static int happyCoding(string nickname)
     {
-        var groupedNumbers = numbers.GroupBy(x => x);
-        int uniqueNumber = groupedNumbers.Single(g => g.Count() == 1).Key;
+        nickname = nickname.ToLower(); 
 
-        return uniqueNumber;
+        switch (nickname)
+        {
+            case "happy coding":
+                return 1;
+            case "coding happy":
+                return 2;
+            case "coding everyday":
+                return 3;
+            case "happy programmer":
+                return 4;
+            default:
+                if (nickname.Contains("happy") && nickname.Contains("coding"))
+                {
+                    return 5; 
+                }
+                return 0;
+        }
     }
 }
