@@ -1,28 +1,29 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
-public static class Kata
+public class SqInRect
 {
-    public static int happyCoding(string nickname)
+    public static List<int> sqInRect(int lng, int wdth)
     {
-        nickname = nickname.ToLower(); 
-
-        switch (nickname)
+        if (lng == wdth)
         {
-            case "happy coding":
-                return 1;
-            case "coding happy":
-                return 2;
-            case "coding everyday":
-                return 3;
-            case "happy programmer":
-                return 4;
-            default:
-                if (nickname.Contains("happy") && nickname.Contains("coding"))
-                {
-                    return 5; 
-                }
-                return 0;
+            return null;
         }
+
+        List<int> squares = new List<int>();
+        while (lng > 0 && wdth > 0)
+        {
+            if (lng > wdth)
+            {
+                squares.Add(wdth);
+                lng -= wdth;
+            }
+            else
+            {
+                squares.Add(lng);
+                wdth -= lng;
+            }
+        }
+        return squares;
     }
 }
