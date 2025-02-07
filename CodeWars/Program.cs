@@ -1,29 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 
-public class SqInRect
+public class Number
 {
-    public static List<int> sqInRect(int lng, int wdth)
+    public static int DigitalRoot(long n)
     {
-        if (lng == wdth)
+        if (n < 10)
         {
-            return null;
+            return (int)n;
         }
-
-        List<int> squares = new List<int>();
-        while (lng > 0 && wdth > 0)
+        long sum = 0;
+        while (n > 0)
         {
-            if (lng > wdth)
-            {
-                squares.Add(wdth);
-                lng -= wdth;
-            }
-            else
-            {
-                squares.Add(lng);
-                wdth -= lng;
-            }
+            sum += n % 10;
+            n /= 10;
         }
-        return squares;
+        return DigitalRoot(sum);
     }
 }
