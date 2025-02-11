@@ -1,19 +1,33 @@
 ﻿using System;
 
-public class Number
+public class Kata
 {
-    public static int DigitalRoot(long n)
+    public static bool IsAValidMessage(string message)
     {
-        if (n < 10)
+        int index = 0;
+        for (int i = 0; i < message.Length; i++)
         {
-            return (int)n;
+            if (Char.IsDigit(message[i]))
+            {
+                string txt = message.Substring(index, i);
+                Console.WriteLine(txt);
+                if (txt.Length == (int)message[i] - 48)
+                {
+                    index = i +1;
+                    return true;
+                }
+            }
         }
-        long sum = 0;
-        while (n > 0)
-        {
-            sum += n % 10;
-            n /= 10;
-        }
-        return DigitalRoot(sum);
+
+        return false; // jut to avoid error
+    }
+
+    public static void Main(string[] args)
+    {
+        // Example usage of the IsAValidMessage method
+        string testMessage = "Hel3is a test message!";
+        bool isValid = IsAValidMessage(testMessage);
+
+        Console.WriteLine($"Is the message valid? {isValid}");
     }
 }
